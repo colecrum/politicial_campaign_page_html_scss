@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Political Campaign Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Political Campaign Page</title>
+    <style src = "style.css">
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body>
+    
+    <script src = "script.js">
+    </script>
+    
+    <header>
+      <nav>
+        <div class = "topnav" id = "left-nav">
+          <a active href = "#home-section">Home</a>
+          <a href = "#issues-section">Issues</a>
+          <a href = "#news-section">News</a>
+          <a href = "#events-section">Events</a>
+          <a href = "#contribute-section">Contribute</a>
+          <a href = "#volunteer">Volunteer</a>
+          <a href = "#contact">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div id = "home-section" class = "lg-section">
+        <section>
+          <div class="home-parallax">
+            <div class = "home-container">
+              <h4 id = "home-pre-header">JOIN THE CAMPAIGN EFFORT</h4>
+              <h1 id = "home-header">Get Off the Sidelines!</h1>
+              <p id = "home-description">Stand up and be a part of building a better future for our country! Join our historical campaign and participate in defending the values that make this country great. Make a difference, today!</p>
+              <form id = "home-join" action = "">
+                <div class = "form-row">
+                <div id = "form-name">
+                <input type = "text" id = "name" name = "name" placeholder = "Your Name"></div>
+                <div id = "form-zip">
+                <input type = "number" id = "zipcode" name = "zipcode" placeholder = "Zip Code"></div>  
+                </div>
+                <div id = "form-email">
+                  <input type = "text" id = "email" name = "email" placeholder = "Email"></div>
+                <input id = "home-submit" type = "submit" value = "JOIN THE TEAM">
+              </form>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+      
+      <div id = "issues-section" class = "md-section">
+        <section>
+          <h1 id = "issues-header">ISSUES</h1>
+          <div class = "issues-row">
+            <div class = "issues-cont">
+              <img class = "issues-img" src = "https://img.icons8.com/bubbles/2x/education.png"><p class = "issues-img-title">EDUCATION</p>
+            </div>
+            <div class = "issues-cont">
+              <img class = "issues-img" src = "https://www.pngarts.com/files/8/Economy-PNG-Free-Download.png"><p class = "issues-img-title">ECONOMY</p>
+            </div>
+            <div class = "issues-cont">
+              <img class = "issues-img" id = "account-img" src = "http://talonconsulting.com/wp-content/uploads/2018/02/accountability-foto.png"><p class = "issues-img-title">ACCOUNTABILITY</p>
+            </div>
+          </div>
+         
+        </section>
+      </div>
+      
+      <div id = "news-section" class = "md-section">
+        <section>
+          <div class = "news-parallax">
+            <div class = "video-cont">
+    <iframe class = "video" id = "vid1" width="560" height="315" src="https://www.youtube.com/embed/LcjEe9guEIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+            <div class = "video-cont">
+    <iframe class = "video" id = "vid2" width="560" height="315" src="https://www.youtube.com/embed/E__xfan4vKI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+            <div class = "video-cont">
+    <iframe class = "video" id = "vid3" width="560" height="315" src="https://www.youtube.com/embed/CcjG2fK7kNk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+          </div>
+          
+        </section>
+      </div>
+      
+      <div id = "events-section" class = "md-section">
+        <section>
+          <h1 id = "events-header">UPCOMING EVENTS</h1>
+          <div class = "flyer-row">
+          <div class = "flyer-cont">
+            <img class = "flyer-img" src = "http://steward-media.com/wp-content/uploads/2013/11/RF_OfficialKickOff_Flyer_opt.jpg">
+          </div>
+          <div class = "flyer-cont">
+            <img class = "flyer-img" src = "https://i.pinimg.com/564x/b0/bc/f4/b0bcf4799c80537effc39047a5777438.jpg">
+          </div>
+          <div class = "flyer-cont">
+            <img class = "flyer-img" src = "https://i.pinimg.com/originals/6d/9c/51/6d9c5148c9765f825969dc5bd102607f.jpg">
+          </div>
+          <div class = "flyer-cont">
+            <img class = "flyer-img" src = "http://www.seraphimchris.com/wp-content/uploads/2012/10/political-election-main-8x11-copy.jpg">
+          </div>
+          </div>
+        </section>
+      </div>
+    
+      <div id = "contribute-section" class = "md-section">
+        <section>
+          <div class = "contribute-parallax">
+            <div class = "contribute-cont">
+              <img class = "contribute-img" src = "http://static1.squarespace.com/static/57855f5f37c581e72462df76/5c743f831905f4b95979399c/5c744816e79c70ca9d576c82/1551125028024/?format=1500w">
+              <div class = "contribute-but">
+              <a href = "" class = "donation">CONTRIBUTE TODAY!</a>
+            </div>
+            </div>
+            
+          </div>
+          
+        </section>
+      </div>
+      
+      <div id = "volunteer-section" class = "md-section">
+        <section>
+          <div class = "vol-full-cont">
+          <div class = "volunteer-cont">
+            <img class = "volunteer-img" src = "https://cdn.pixabay.com/photo/2016/12/07/08/17/volunteer-1888823_960_720.png">
+          </div>
+            <div class = "volunteer-form">
+          <div class = "info-cont">
+          <h1 id = "volunteer-header">READY TO MAKE A DIFFERENCE?</h1>
+            <p id = "volunteer-description">Join our team today to be a part of building a better future for our country. We have a variety of volunteer positions, so even if you're not sure how you could help, reach out to us today!</p>
+          </div>
+            <br>
+            <form id = "volunteer-join" action = "">
+                <div class = "form-row">
+                <div id = "form-name">
+                <input type = "text" id = "name" name = "name" placeholder = "Your Name"></div>
+                <div id = "form-zip">
+                <input type = "number" id = "zipcode" name = "zipcode" placeholder = "Zip Code"></div>  
+                </div>
+                <div id = "form-email">
+                  <input type = "text" id = "email" name = "email" placeholder = "Email"></div>
+                <input id = "volunteer-submit" type = "submit" value = "JOIN THE TEAM">
+              </form>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+      
+      <div id = "contact-form-section" class = "md-section">
+        <section>
+          <div class="home-parallax">
+            <div class = "con-form-cont">
+            <h1 id = "con-form-header">If you'd like to reach out to our team, submit your message below! <p id = "con-form-sub">We can't wait to meet you.</p></h1>
+              <br>
+              <div id = "con-div-cont">
+              <form id = "con-sec-form">
+                <div id = "con-div-name">
+                <input type = "text" id = "con-name" name = "con-name" placeholder = "Your Name"></div>
+                <div id = "con-div-phone">
+                <input type = "number" id = "con-phone" name = "con-phone" placeholder = "Phone Number"></div>
+                <div id = "con-div-email">
+                <input type = "text" id = "con-email" name = "con-email" placeholder = "Email"></div>
+                <div id = "con-div-zip">
+                <input type = "number" id = "con-zip" name = "con-zip" placeholder = "Zip Code"></div>
+                <div id = "con-div-reason">
+                <select name = "con-reason" id = "con-reason">
+                  <option value = "Reason for Reaching Out">-Reason for Reaching Out-</option>
+                  <option value = "Volunteer Opportunities">Volunteer Opportunities</option>
+                  <option value = "Contribution">Contribution</option>
+                  <option value = "Press Inquiry">Press Inquiry</option>
+                  <option value = "Event Inquiry">Event Inquiry</option>
+                  <option value = "Candidate Information Request">Candidate Information Request</option>
+                  </select></div>
+                <div id = "con-div-message">
+                <textarea id = "con-message" name = "con-message" rows = "3" cols = "50" placeholder = "Additional information you'd like to share..."></textarea></div>
+                <input id = "con-submit" type = "submit" value = "SUBMIT">
+              </form>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+        </section>
+      </div>
+    
+    </main>
+    
+    <footer>
+      <h2 id = "learnMore-header">Want to Learn More?</h2>
+          <p id = "learnMore-sub">Let's Connect!</p>
+          <div id = "fa-container">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+    </footer>
+  <br>
+  <br>
+  <hr>
+  <div id = "contact-section">
+      <section id = "contact" class = "container">
+        <h2 id = "contact-title">Designed & Coded by Cole Crum</h2>
+     <div class="contact-links">
+      <div class = "link-cont" id = "git-cont">
+       <a id = "profile-link" href = "https://github.com/colecrum?tab=repositories" target="_blank" class="btn contact-details"><img id = "git-logo" class = "contact-img" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXk1n8mQe3sbaaMDgiqtSeSC8QySxLfgkaA&usqp=CAU" title = "GitHub"></a></div>
+       <div class = "link-cont" id= "pen-cont">
+    <a href="https://codepen.io/colecrum" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" title = "CodePen" </a></div>
+         <div class = "link-cont" id = "mail-cont">
+    <a href="mailto:colemcrum@gmail.com" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://lh3.googleusercontent.com/VS3B_qhOFTYsdyNfnlr98zg3HNjB_Gcs9bxVnaQO9MysAoBOXMHATClhRviImKKJV8RV-0s7hl8KeVQcij5Iagb1exHzt40x679l8Q=w0" title = "Email"></a></div>
+         <div class = "link-cont" id = "phone-cont">
+    <a href="tel:512-517-8503" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://cdn4.iconfinder.com/data/icons/phones-colored/48/JD-32-512.png" title = "Phone"></a></div>
+  </div>       
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
