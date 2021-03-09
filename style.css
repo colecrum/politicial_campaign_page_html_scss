@@ -129,6 +129,10 @@ input {
   color: white;
 }
 
+#home-description {
+  font-weight: bold;
+}
+
 .form-row {
   display: flex;
 }
@@ -146,6 +150,19 @@ input {
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .home-parallax {
+    background-attachment: scroll;
+  }
+
+  .home-container {
+    width: 80%;
+    height: auto;
+    float: none;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
 /* ISSUES SECTION --------------------------------*/
 #issues-section {
   background-color: #B22234;
@@ -170,16 +187,25 @@ input {
   width: 50%;
 }
 
-#account-img {
-  width: 77%;
-}
-
 .issues-img-title {
   font-size: 24px;
   font-weight: bold;
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  .issues-row {
+    display: inline-block;
+  }
+
+  .issues-cont {
+    width: 100%;
+  }
+
+  .issues-img {
+    width: 80%;
+  }
+}
 /* NEWS SECTION ---------------------------------*/
 #news-section {
   text-align: center;
@@ -200,6 +226,20 @@ input {
   margin: 150px 20px 20px 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .news-parallax {
+    background-image: none;
+    background-color: grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .video-cont {
+    display: flex;
+    width: 100%;
+    margin: 150px 5px 5px 5px;
+  }
+}
 /* EVENTS SECTION -------------------------------*/
 #events-section {
   background-color: #FFFFFF;
@@ -223,6 +263,23 @@ input {
   width: 100%;
 }
 
+#flyer-img1 {
+  height: 89%;
+}
+
+@media screen and (max-width: 600px) {
+  .flyer-row {
+    display: inline-block;
+  }
+
+  .flyer-cont {
+    width: 90%;
+  }
+
+  .flyer-img {
+    width: 100%;
+  }
+}
 /* CONTRIBUTE SECTION --------------------------------*/
 .contribute-parallax {
   background-image: url("https://images.pexels.com/photos/1037912/pexels-photo-1037912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -249,6 +306,30 @@ input {
   padding: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .contribute-parallax {
+    background-attachment: scroll;
+    text-align: center;
+  }
+
+  .contribute-cont {
+    width: 90%;
+  }
+
+  .contribute-img {
+    width: 70%;
+  }
+
+  .contribute-but {
+    float: none;
+    margin-right: 0px;
+    margin-top: 350px;
+  }
+
+  .donation {
+    font-size: 30px;
+  }
+}
 /* VOLUNTEER SECTION -------------------------------*/
 #volunteer-section {
   background-color: #3C3B6E;
@@ -290,6 +371,30 @@ input {
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .vol-full-cont {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .volunteer-cont {
+    width: 100%;
+    height: auto;
+  }
+
+  .volunteer-img {
+    margin: 10px;
+    width: 80%;
+  }
+
+  .info-cont {
+    width: 100%;
+  }
+
+  .volunteer-form {
+    width: 90%;
+  }
+}
 /* CONTACT SECTION --------------------------------------*/
 #con-div-cont {
   display: block;
