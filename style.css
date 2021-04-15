@@ -179,6 +179,16 @@ input {
     width: 45%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .home-parallax {
+    background-attachment: scroll;
+    height: auto;
+  }
+
+  .home-container {
+    width: 45%;
+  }
+}
 /* ISSUES SECTION --------------------------------*/
 #issues-section {
   background-color: #B22234;
@@ -220,6 +230,19 @@ input {
 
   .issues-img {
     width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .issues-row {
+    display: inline-block;
+  }
+
+  .issues-cont {
+    width: 100%;
+  }
+
+  .issues-img {
+    width: 60%;
   }
 }
 /* NEWS SECTION ---------------------------------*/
@@ -296,6 +319,19 @@ input {
     width: 100%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .flyer-row {
+    display: inline-block;
+  }
+
+  .flyer-cont {
+    width: 90%;
+  }
+
+  .flyer-img {
+    width: 80%;
+  }
+}
 /* CONTRIBUTE SECTION --------------------------------*/
 .contribute-parallax {
   background-image: url("https://images.pexels.com/photos/1037912/pexels-photo-1037912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -368,6 +404,30 @@ input {
 
   .donation {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contribute-parallax {
+    background-attachment: scroll;
+    text-align: center;
+  }
+
+  .contribute-cont {
+    width: 90%;
+  }
+
+  .contribute-img {
+    width: 45%;
+  }
+
+  .contribute-but {
+    float: none;
+    margin-right: 0px;
+    margin-top: 350px;
+  }
+
+  .donation {
+    font-size: 30px;
   }
 }
 /* VOLUNTEER SECTION -------------------------------*/
@@ -443,6 +503,21 @@ input {
   .volunteer-img {
     margin: 10px;
     width: 90%;
+  }
+
+  #volunteer-header {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .volunteer-cont {
+    height: auto;
+  }
+
+  .volunteer-img {
+    margin: 10px;
+    width: 90%;
+    padding-top: 50px;
   }
 
   #volunteer-header {
@@ -586,6 +661,11 @@ footer {
   }
 }
 @media screen and (max-width: 800px) and (orientation: landscape) {
+  .contact-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
   .contact-links {
     width: 100%;
   }
